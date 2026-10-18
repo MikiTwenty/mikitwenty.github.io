@@ -3,30 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Michele's Portfolio</title>
+        <title>Michele Ventimiglia</title>
+        <meta name="description" content="Michele Ventimiglia, AI engineer based in Milan. Links to GitHub, LinkedIn and socials.">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src https://www.googletagmanager.com https://td.doubleclick.net; object-src 'none'; base-uri 'self'; form-action 'none'">
+        <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-        <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HH1J3YDPG"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0HH1J3YDPG', { 'anonymize_ip': true });
-
-        </script>
     </head>
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
         <!-- Main content -->
-        <div class="main-content">
+        <main class="main-content" id="main">
             <!-- Profile Section -->
             <div class="profile-section">
-                <img src="profile.jpg" alt="Your Avatar" class="profile-image">
+                <img src="profile.jpg" alt="Portrait of Michele Ventimiglia" width="96" height="96" class="profile-image">
                 <h1 class="profile-name">Michele Ventimiglia</h1>
-                <p class="profile-bio">🇮🇹 Travels, Food & AI</p>
+                <p class="profile-bio"><svg class="flag" viewBox="0 0 3 2" width="21" height="14" role="img" aria-label="Italy"><rect width="1" height="2" fill="#009246"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ce2b37"/></svg>Travels, Food &amp; AI</p>
             </div>
 
             <!-- Links Section -->
@@ -69,7 +61,19 @@
                     </svg>
                 </a>
             </div>
-        </div>
+        </main>
+
+        <footer class="site-footer">
+            <span>© 2026 Michele Ventimiglia</span>
+            <span aria-hidden="true">·</span>
+            <a href="privacy.html">Privacy &amp; Cookie</a>
+            <span aria-hidden="true">·</span>
+            <a href="privacy.html#legal">Legal notice</a>
+            <span aria-hidden="true">·</span>
+            <button type="button" class="linklike" data-cc-open>Cookie settings</button>
+        </footer>
+
+        <script src="consent.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
